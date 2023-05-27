@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import VideoMsg from "./Ingoing/VideoMsg";
 
-const IngoingMsg = () => {
+const IngoingMsg:React.FC = () => {
 	const [chatOption, setChatOption] = useState(false);
 	return (
 		<>

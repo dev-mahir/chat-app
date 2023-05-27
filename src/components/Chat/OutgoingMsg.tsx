@@ -1,9 +1,9 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import Avatar from "../Avatar/Avatar";
 
 
-const OutgoingMsg = () => {
-	const [chatOption, setChatOption] = useState(false);
+const OutgoingMsg:React.FC = () => {
+	const [chatOption, setChatOption] = useState<boolean>(false);
 	return (
 		<div className="flex justify-end">
 			<div className="flex flex-row-reverse items-end gap-x-3">

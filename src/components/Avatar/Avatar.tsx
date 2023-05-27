@@ -3,7 +3,7 @@ type PropsType = {
 	alt: string;
 };
 
-const Avatar = ({ className, alt }: PropsType) => {
+const Avatar: React.FC<PropsType> = ({ className, alt }) => {
 	return (
 		<img
 			className={`h-12 w-12 rounded-full object-cover ${className}`}

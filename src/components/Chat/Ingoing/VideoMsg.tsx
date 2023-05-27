@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import video from "../../../assets/video/helicopter.mp4";
 
-const VideoMsg = () => {
+const VideoMsg:React.FC = () => {
 	return (
 		<div className="mb-2">
 			<p className="text-white font-medium pb-1">images</p>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import OutgoingMsg from "./OutgoingMsg";
 import IngoingMsg from "./IngoingMsg";
 
-const Conversation = () => {
+const Conversation: React.FC= () => {
 	const [chatOption, setChatOption] = useState(false);
 	const me = true;
 	return (

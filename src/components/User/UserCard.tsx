@@ -1,6 +1,6 @@
 import React from "react";
 
-const UserCard = () => {
+const UserCard:React.FC = () => {
 	return (
 		<div className="w-[50px] flex justify-center flex-col items-center">
 			<div className="relative h-9 w-9">
