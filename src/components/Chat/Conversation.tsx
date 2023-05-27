@@ -1,24 +1,22 @@
-import { useState } from "react";
+import React from "react";
 import OutgoingMsg from "./OutgoingMsg";
 import IngoingMsg from "./IngoingMsg";
+import Avatar from "../Avatar/Avatar";
 
-const Conversation: React.FC= () => {
-	const [chatOption, setChatOption] = useState(false);
-	const me = true;
+const Conversation: React.FC = () => {
+
 	return (
 		<>
-			<div className="flex justify-between items-center border-b border-border_color p-5">
+			<div className="flex justify-between items-center border-b border-border_color p-2 md:p-5">
 				<div className="flex gap-x-2 items-center">
-					<img
-						className="h-10 w-10 rounded-full"
-						src="http://chatvia-light.react.themesbrand.com/static/media/avatar-4.b23e41d9c09997efbc21.jpg"
-						alt=""
-					/>
-					<p className="font-semibold">Dorish Brown</p>
+					<Avatar alt="User" className="w-8 h-8"/>
+					<p className="font-semibold whitespace-nowrap">
+						Dorish
+					</p>
 					<div className=" h-2 w-2 rounded-full border-emerald-400 p-[1px] border-4"></div>
 				</div>
-				<div className="flex items-center gap-x-7">
-					<button>
+				<div className="flex items-center gap-x-3 lg:gap-x-7">
+					<button className="hidden md:block">
 						<i className="text-lg  text-[#7a7f9a] ri-search-line"></i>
 					</button>
 					<button>

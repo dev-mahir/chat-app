@@ -19,7 +19,9 @@ const HomePage: React.FC = () => {
 							Md Mahir Uddin
 						</h4>
 					</div>
-					{profileShow && <Profile hide={setProfileShow} />}
+					{profileShow && (
+						<Profile hide={() => setProfileShow(false)} />
+					)}
 					<Sidebar />
 				</div>
 				<div className=" md:flex-grow">

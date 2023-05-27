@@ -98,7 +98,7 @@ const IngoingMsg:React.FC = () => {
 
                             {/* when video msg  */}
 
-                            <VideoMsg/>
+                            {/* <VideoMsg/> */}
                             
 						
 							{/* when typing hide clock  */}

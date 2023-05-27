@@ -1,10 +1,10 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 
-interface ProfileProps {
-	hide: Dispatch<SetStateAction<boolean>>;
+interface PropsType {
+	hide: (value?: React.SetStateAction<boolean>) => void;
 }
 
-const Profile: React.FC<ProfileProps> = ({ hide }) => {
+const Profile: React.FC<PropsType> = ({ hide }) => {
 	return (
 		<div className="bg-black/30 z-50 fixed top-0 left-0 w-screen h-screen flex justify-center items-center">
 			<div className="bg-[#f5f7fb] rounded-md shadow_1 px-5 py-10 w-[500px] relative">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const RegisterPage = () => {
+const RegisterPage:React.FC = () => {
 	return (
 		<div className="bg-f7 h-screen flex justify-center items-center">
 			<div className="w-[400px]">
